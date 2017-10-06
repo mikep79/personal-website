@@ -6,7 +6,7 @@ myApp.config(function($routeProvider, $locationProvider) {
 
   $routeProvider
     .when('/', {
-      templateUrl: '/views/templates/user.html',
+      templateUrl: '/views/user.html',
       controller: 'UserController as uc',
     });
 });

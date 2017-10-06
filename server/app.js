@@ -25,7 +25,7 @@ var user_options = {
 };
 
 // Moved API call into server to protect oAuthToken
-app.get('/github/user', function(req, res){
+app.get('/github/user', function (req, res) {
   request(user_options, function (error, response, body) {
     if (response && response.statusCode == 200) {
       res.send(body);
@@ -44,7 +44,7 @@ var repo_options = {
 };
 
 // Moved API call into server to protect oAuthToken
-app.get('/github/repos', function(req, res){
+app.get('/github/repos', function (req, res) {
   request(repo_options, function (error, response, body) {
     if (response && response.statusCode == 200) {
       res.send(body);
@@ -54,6 +54,6 @@ app.get('/github/repos', function(req, res){
   });
 });
 
-app.listen(port, function() {
+app.listen(port, function () {
   console.log('localhost running on port', port);
 });
