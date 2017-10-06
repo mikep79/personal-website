@@ -17,7 +17,7 @@
 
 ### Instructions
 
-Create a landing page for yourself as a developer. This is a front end project, it has a simple server set up to serve back your static files. Otherwise, the focus will be on Angular and front end styling.
+Create a landing page for yourself as a developer. This is a front end project, it has a simple server set up to serve back your static files. The focus will be on Angular and front end styling.
 
 #### Front End
 - Have at least two views. One page about you and one page about your code.
@@ -47,5 +47,5 @@ The following routes have been provided and should work after setting up your `.
 - Use environment variables on Heroku for your GitHub username and API key, **the .env file should not be checked in (leave it in the .gitignore)**. To set these up click into the app on Heroku, Settings, Reveal Config Vars, and add the same key value pairs you have in your local `.env` file.
 
 ## Submit
-- The github url (where the code lives)
+- The github repo url (where the code lives)
 - If deployed: The Heroku url (url of the deployed site)
