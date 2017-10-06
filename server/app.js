@@ -1,5 +1,6 @@
 var express = require('express');
 var path = require('path');
+require('dotenv').config();
 var app = express();
 var port = process.env.PORT || 5000;
 
@@ -10,8 +11,8 @@ app.use(express.static('server/public'));
 var request = require('request');
 
 // API Key & username are environment variables in Heroku
-var username = process.env.USER_NAME || require('./config.js').username;
-var oauthToken = process.env.GIT_TOKEN || require('./config.js').oauthToken;
+var username = process.env.USER_NAME;
+var oauthToken = process.env.GIT_TOKEN;
 
 app.use(express.static('public'));
 
