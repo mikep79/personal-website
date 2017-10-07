@@ -1,6 +1,7 @@
-- [x] Set up two controllers for page views. Source! Shake hands with i njected service.
+- [x] Set up two controllers for page views. Source! Shake hands with injected service.
 - [x] Set up page views. Link to controllers. Run controller testFunc().
-- [ ] Changed UserController from 'uc' to 'UC' in client and user.html view.
+- [x] Changed UserController from 'uc' to 'UC' in client and user.html view.
+- [x] Added data display to info and repo page views.
 
 
 github token:
