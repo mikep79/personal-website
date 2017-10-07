@@ -1,0 +1,21 @@
+#nav_title {
+    text-align: center;
+}
+
+h1 {
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    font-size: 20px;
+    font-family: 'Manuale', serif;
+}
+
+p, li {
+    font-family: 'Manuale', serif;
+}
+
+#profile_pic {
+    height: 130px;
+}

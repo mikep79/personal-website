@@ -9,7 +9,7 @@
 - [x] Determine what repo data to keep on DOM; only display this.
 - [x] Linked style sheet.
 
-- [ ] Bootstrap styling.
+- [x] Bootstrap styling.
 
 Hard mode:
 - [ ] Deploy on Heroku.

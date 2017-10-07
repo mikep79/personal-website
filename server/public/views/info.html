@@ -1,9 +1,7 @@
-<section>
+<section class="container">
     <h2>Profile</h2>
     <div>
-        <img ng-src='{{ IC.user.data.avatar_url }}' height='50px'>
-        <p> {{ IC.user.data.name }} </p>
-        <p> </p>
+        <img id="profile_pic" ng-src='{{ IC.user.data.avatar_url }}'>
         <p> {{ IC.user.data.email }} </p>
         <p> {{ IC.user.data.bio }} </p>
         <ul>
@@ -22,5 +20,5 @@
             {{ key }} : {{ value }}
         </li>
     </ol> -->
-    
+
 </section>
