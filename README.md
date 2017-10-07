@@ -6,7 +6,9 @@
 - [x] Organized data on pages.
 - [x] Determine what info data to keep on DOM; only display this.
 - [x] Add profile pic to Github account (avater) and additional info.
-- [ ] Determine what repo data to keep on DOM; only display this.
+- [x] Determine what repo data to keep on DOM; only display this.
+- [x] Linked style sheet.
+
 - [ ] Bootstrap styling.
 
 Hard mode:
