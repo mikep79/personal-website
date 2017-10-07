@@ -1,3 +1,11 @@
+- [x] Set up two controllers for page views. Source! Shake hands with i njected service.
+- [x] Set up page views. Link to controllers. Run controller testFunc().
+- [ ] Changed UserController from 'uc' to 'UC' in client and user.html view.
+
+
+github token:
+c46b9ade41b73422fb2c2464f950b8a52d5fc97b
+
 # Weekend 6 HW  (Part One)
 ## Start a Portfolio
 

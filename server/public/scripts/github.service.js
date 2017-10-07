@@ -1,7 +1,6 @@
 myApp.service('GithubService', function ($http) {
   var self = this;
   // Object that will store our user data
-
   self.user = {data: {}};
 
   //Call to Github API to fetch user's profile info
