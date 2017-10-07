@@ -4,9 +4,13 @@
 - [x] Added data display to info and repo page views.
 - [x] Add links to pages to index.html.
 - [x] Organized data on pages.
+- [x] Determine what info data to keep on DOM; only display this.
+- [x] Add profile pic to Github account (avater) and additional info.
 - [ ] Determine what repo data to keep on DOM; only display this.
-- [ ] Add profile pic to Github account (avater) and additional info.
 - [ ] Bootstrap styling.
+
+Hard mode:
+- [ ] Deploy on Heroku.
 
 # Weekend 6 HW  (Part One)
 ## Start a Portfolio

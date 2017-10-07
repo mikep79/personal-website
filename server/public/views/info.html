@@ -1,5 +1,21 @@
 <section>
-    <h2>Info page</h2>
+    <h2>Profile</h2>
+    <div>
+        <img ng-src='{{ IC.user.data.avatar_url }}' height='50px'>
+        <p> {{ IC.user.data.name }} </p>
+        <p> </p>
+        <p> {{ IC.user.data.email }} </p>
+        <p> {{ IC.user.data.bio }} </p>
+        <ul>
+            <li>
+                <a href="{{ IC.user.data.html_url }}">Github Page: {{ IC.user.data.login }} </a>
+            </li>
+            <li> Company: {{ IC.user.data.company }} </li>
+            <li> Public Repos: {{ IC.user.data.public_repos }} </li>
+        </ul>
+        <hr>
+    </div>
+
     <ol>
         <li ng-repeat='(key, value) in IC.user.data'>
             {{ key }} : {{ value }}

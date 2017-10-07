@@ -16,6 +16,9 @@ myApp.config(function($routeProvider, $locationProvider) {
     .when('/info', {
       templateUrl: '/views/info.html',
       controller: 'InfoController as IC'
+    })
+    .otherwise({
+      redirectTo: '/'
     });
 
 });
