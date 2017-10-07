@@ -3,13 +3,10 @@
 - [x] Changed UserController from 'uc' to 'UC' in client and user.html view.
 - [x] Added data display to info and repo page views.
 - [x] Add links to pages to index.html.
-
-- [ ] Add profile pic to Github account (avater).
+- [x] Organized data on pages.
+- [ ] Determine what repo data to keep on DOM; only display this.
+- [ ] Add profile pic to Github account (avater) and additional info.
 - [ ] Bootstrap styling.
-
-
-github token:
-c46b9ade41b73422fb2c2464f950b8a52d5fc97b
 
 # Weekend 6 HW  (Part One)
 ## Start a Portfolio

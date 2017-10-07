@@ -1,6 +1,14 @@
 <section>
     <h2>Repos page</h2>
     <div>
-        {{ RC.repos.data }} 
+        <ol>
+            <li ng-repeat='eachRepo in RC.repos.data'>
+                <ul>
+                <li ng-repeat='(key, value) in eachRepo'>
+                    {{ key }} : {{ value }}
+                </li>
+            </ul>
+            </li>
+        </ol>
     </div>
 </section>

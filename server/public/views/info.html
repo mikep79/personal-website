@@ -1,6 +1,8 @@
 <section>
     <h2>Info page</h2>
-    <div>
-        {{ IC.user.data }}
-    </div>
+    <ol>
+        <li ng-repeat='(key, value) in IC.user.data'>
+            {{ key }} : {{ value }}
+        </li>
+    </ol>
 </section>
