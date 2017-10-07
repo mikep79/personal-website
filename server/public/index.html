@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Projects</title>
-    <script src="vendors/angular.min.js" charset="utf-8"></script>
-    <script src="vendors/angular-route.min.js" charset="utf-8"></script>
-    <script src="scripts/client.js" charset="utf-8"></script>
-    <script src="scripts/user.controller.js" charset="utf-8"></script>
-    <script src="scripts/controllers/repos.controller.js" charset="utf-8"></script>
-    <script src="scripts/controllers/info.controller.js" charset="utf-8"></script>
-    <script src="scripts/github.service.js" charset="utf-8"></script>
-  </head>
-  <body ng-app="myApp">
-    <h1>Mike - portfolio</h1>
-    <main ng-view>
 
-    </main>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>Projects</title>
+  <script src="vendors/angular.min.js" charset="utf-8"></script>
+  <script src="vendors/angular-route.min.js" charset="utf-8"></script>
+  <script src="scripts/client.js" charset="utf-8"></script>
+  <script src="scripts/user.controller.js" charset="utf-8"></script>
+  <script src="scripts/controllers/repos.controller.js" charset="utf-8"></script>
+  <script src="scripts/controllers/info.controller.js" charset="utf-8"></script>
+  <script src="scripts/github.service.js" charset="utf-8"></script>
+</head>
+
+<body ng-app="myApp">
+  <h1>Mike - portfolio</h1>
+  <div>
+    <a ng-href="#/">Welcome Page</a>
+    <a ng-href="#/info">View Profile</a>
+    <a ng-href="#/repos">Repositories</a>
+  </div>
+  <hr>
+  <main ng-view>
+
+  </main>
+</body>
+
 </html>

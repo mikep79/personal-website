@@ -2,6 +2,10 @@
 - [x] Set up page views. Link to controllers. Run controller testFunc().
 - [x] Changed UserController from 'uc' to 'UC' in client and user.html view.
 - [x] Added data display to info and repo page views.
+- [x] Add links to pages to index.html.
+
+- [ ] Add profile pic to Github account (avater).
+- [ ] Bootstrap styling.
 
 
 github token:
