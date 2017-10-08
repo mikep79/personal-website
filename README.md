@@ -12,7 +12,7 @@
 - [x] Bootstrap styling.
 
 Hard mode:
-- [ ] Deploy on Heroku.
+- [x] Deploy on Heroku.
 
 # Weekend 6 HW  (Part One)
 ## Start a Portfolio
