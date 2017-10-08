@@ -25,6 +25,10 @@ p, li {
 
 #profile_pic {
     height: 130px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 4px;
 }
 
 .page_body {
