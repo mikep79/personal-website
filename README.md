@@ -14,6 +14,12 @@
 Hard mode:
 - [x] Deploy on Heroku.
 
+- [x] Links should open new browser tab.
+- [x] Add LinkedIn link in profile.
+- [ ] Take out user/home. Land on profile at '/'.
+- [ ] Consider contact page to show email or contact form.
+
+
 # Weekend 6 HW  (Part One)
 ## Start a Portfolio
 

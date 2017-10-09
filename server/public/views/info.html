@@ -3,12 +3,12 @@
         <h2>Profile</h2>
         <div>
             <img id="profile_pic" ng-src='{{ IC.user.data.avatar_url }}'>
+            <span></span>            
             <p> {{ IC.user.data.email }} </p>
             <p> {{ IC.user.data.bio }} </p>
             <ul>
-                <li>
-                    <a href="{{ IC.user.data.html_url }}">Github Page: {{ IC.user.data.login }} </a>
-                </li>
+                <li><a ng-href="https://www.linkedin.com/in/mike-pettman/" target="_blank">LinkedIn</a></li>
+                <li><a href="{{ IC.user.data.html_url }}" target="_blank">Github Page: {{ IC.user.data.login }} </a></li>
                 <li> Company: {{ IC.user.data.company }} </li>
                 <li> Public Repos: {{ IC.user.data.public_repos }} </li>
             </ul>
