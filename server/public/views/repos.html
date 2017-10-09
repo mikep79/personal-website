@@ -24,10 +24,10 @@
                             <a href="{{ eachRepo.languages_url}}">Languages used</a>
                         </li>
                         <li>
-                            Created: {{ eachRepo.created_at}}
+                            Created: {{ eachRepo.created_at | date:'shortDate' }}
                         </li>
                         <li>
-                            Last Push: {{ eachRepo.pushed_at}}
+                            Last Push: {{ eachRepo.pushed_at | date:'shortDate' }}
                         </li>
                         <li>
                             Language: {{ eachRepo.language}}
