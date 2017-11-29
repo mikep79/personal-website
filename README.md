@@ -1,5 +1,3 @@
-TEST MIRROR
-
 - [x] Set up two controllers for page views. Source! Shake hands with injected service.
 - [x] Set up page views. Link to controllers. Run controller testFunc().
 - [x] Changed UserController from 'uc' to 'UC' in client and user.html view.
