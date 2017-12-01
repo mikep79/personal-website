@@ -1,4 +1,4 @@
-var myApp = angular.module('myApp', ['ngRoute']);
+var myApp = angular.module('myApp', ['ngRoute', 'ngMaterial']);
 
 /// Routes ///
 myApp.config(function($routeProvider, $locationProvider) {
@@ -6,16 +6,16 @@ myApp.config(function($routeProvider, $locationProvider) {
 
   $routeProvider
     .when('/', {
-      templateUrl: '/views/user.html',
-      controller: 'UserController as UC',
+      templateUrl: '/views/info.html',
+      controller: 'InfoController as IC',
     })
     .when('/repos', {
       templateUrl: '/views/repos.html',
       controller: 'ReposController as RC'
     })
-    .when('/info', {
-      templateUrl: '/views/info.html',
-      controller: 'InfoController as IC'
+    .when('/projects', {
+      templateUrl: '/views/projects.html',
+      controller: 'ProjectsController as PC'
     })
     .otherwise({
       redirectTo: '/'
