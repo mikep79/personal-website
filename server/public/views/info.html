@@ -1,40 +1,31 @@
-<section class="container">
-    <div class="page_body">
-        <h2>Profile</h2>
-        <div layout="row" layout-align="center center">
-            <div flex=50>
-                <p> {{ IC.user.data.email }} </p>
-                <p> {{ IC.user.data.bio }} </p>
-                <ul>
-                    <li>
-                        <a ng-href="https://www.linkedin.com/in/mike-pettman/" target="_blank">
-                            <img ng-src="images/linkedin.png" height="21px">
-                        </a>
-                    </li>
-                    <li>
-                        <a ng-href="{{ IC.user.data.html_url }}" target="_blank">Github Page: {{ IC.user.data.login }} </a>
-                    </li>
-                    <li>
-                        <a href="{{ IC.user.data.html_url }}" target="_blank">
-                            <img ng-src="images/github.png" height="21px" />
-                        </a>
-
-                    </li>
-                    <li> Company: {{ IC.user.data.company }} </li>
-                    <li> Public Repos: {{ IC.user.data.public_repos }} </li>
-                </ul>
-            </div>
-            <div layout-align="center center" flex=50>
-                    <img id="profile_pic" ng-src='{{ IC.user.data.avatar_url }}'>
+<section>
+    <div class="pageBody" layout="row" layout-align="space-between start">
+        <div flex=50>
+            <p id="bioText">Greetings! I'm a full-stack software developer currently based in Minneapolis, MN.</p>
+            <p>I have a passion for front-end work, thorny programming puzzles, and design theory.</p>
+            <p>I spend most of my free time playing guitar, hammered dulcimer, and other instruments, and can be frequently spotted playing at the Dulbliner,
+                Merlins, Keagans, the Depot Coffee House, and other Twin Cities pubs.</p>
+            <div id="socialIcons" layout="row" layout-align="space-around start">
+                <div>
+                    <a href="{{ IC.user.data.html_url }}" target="_blank">
+                        <img ng-src="images/github.png" height="30px" />
+                    </a>
                 </div>
+                <div>
+                    <a ng-href="https://www.linkedin.com/in/mike-pettman/" target="_blank">
+                        <img ng-src="images/linkedin.png" height="30px">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div flex=50>
+            <img id="profile_pic" ng-src='{{ IC.user.data.avatar_url }}'>
         </div>
     </div>
-
+</section>
     <!-- All profile data: 
     <ol>
         <li ng-repeat='(key, value) in IC.user.data'>
             {{ key }} : {{ value }}
         </li>
     </ol> -->
-
-</section>
