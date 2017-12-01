@@ -17,6 +17,9 @@ myApp.config(function($routeProvider, $locationProvider) {
       templateUrl: '/views/projects.html',
       controller: 'ProjectsController as PC'
     })
+    .when('/blog', {
+      templateUrl: '/views/blog.html'
+    })
     .otherwise({
       redirectTo: '/'
     });

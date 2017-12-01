@@ -65,5 +65,9 @@ p, li {
 #socialIcons {
     margin-top: 40px;
 }
-
 /* END HOME/INFO */
+
+/* PROJECTS */
+.appPic {
+    margin: 40px 0px 40px 0px
+}
