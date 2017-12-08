@@ -26,4 +26,33 @@ myApp.controller('ProjectsController', function(){
     
     // var startingFunction = setInterval(changeJumpCurrent, 1000);
 
+    // vm.slides = [
+    //     {image: '/images/jump/img01.png'},
+    //     {image: '/images/jump/img02.png'},
+    //     {image: '/images/jump/img03.png'}
+    // ];
+
+    // vm.currentIndex = 0;
+    // vm.setCurrentSlideIndex = function (index) {
+    //     vm.currentIndex = index;
+    // };
+    // vm.isCurrentSlideIndex = function (index) {
+    //     return vm.currentIndex === index;
+    // };
+
+    // var slideIndex = 0;
+    // // carousel();
+    
+    // function carousel() {
+    //     var i;
+    //     var x = document.getElementsByClassName("mySlides");
+    //     for (i = 0; i < x.length; i++) {
+    //       x[i].style.display = "none"; 
+    //     }
+    //     slideIndex++;
+    //     if (slideIndex > x.length) {slideIndex = 1} 
+    //     x[slideIndex-1].style.display = "block"; 
+    //     setTimeout(carousel, 2000); // Change image every 2 seconds
+    // }
+
 });

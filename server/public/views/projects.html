@@ -1,10 +1,16 @@
 <section>
+    <div class="container slider">
+        <img ng-repeat="eachSlide in PC.slides" class="slide" width="500" ng-src="{{ eachSlide.image }}" ng-hide="!isCurrentSlideIndex($index)">
+    </div>
     <div layout="column" layout-align="start start">
-        <div class="pageBody" layout="row" layout-align="space-between start">
+        <div class="pageBody" layout="row" layout-xs="column" layout-align="space-between start">
             <div flex=70>
+                <div class="appPic">
+                    <img ng-src="images/jump/jump_demo.gif" height="350px" />
+                </div>
                 <!-- <img ng-src="{{ PC.jumpPicsCurrent.image }}" height="350px"/>
             <p>test: {{ PC.obj.i }}</p> -->
-                <div class="appPic">
+                <!-- <div class="appPic">
                     <img src="images/jump/create_event.png" width="500px" />
                 </div>
                 <div class="appPic">
@@ -12,12 +18,15 @@
                 </div>
                 <div class="appPic">
                     <img src="images/jump/find_events.png" width="500px" />
-                </div>
+                </div> -->
             </div>
             <div flex=30>
                 <p>
-                    <strong>Jump is a full-stack JavaScript-based app designed to facilitate event planning and sharing by caregivers
-                        for people with special needs. </strong>
+                    <a href="https://solo-project-mp.herokuapp.com">JUMP - Join Up Meet People</a>
+                </p>
+                <p>
+                    <strong>Full-stack JavaScript-based app designed to facilitate event planning and sharing by caregivers for people
+                        with special needs. </strong>
                 </p>
                 <p>The app allows a user to register and sign in, create events tagged with accessibility and content needs,
                     and share with other users of the app. Users can register for an event and manage attendance in the My
@@ -31,13 +40,11 @@
                 </p>
             </div>
         </div>
-        <div class="pageBody" layout="row" layout-align="space-between start">
+        <div class="pageBody" layout="row" layout-xs="column" layout-align="space-between start">
             <div flex=70>
                 <div class="appPic">
-                    <img src="images/grow_north/dashboard.png" width="500px" />
-                </div>
-                <div class="appPic">
-                    <img src="images/grow_north/profile.png" width="500px" />
+                    <img ng-src="images/grow_north/grow_north_demo.gif" height="350px" />
+                    <!-- <img src="images/grow_north/dashboard.png" width="500px" /> -->
                 </div>
             </div>
             <div flex=30>
@@ -50,6 +57,9 @@
                     change password, and log in. Once logged in, admin can view the directory of all persons in the database,
                     read their information, update any line, and delete the person's profile. Admin can also create connections
                     between profiles and add comments about profile or connection.
+                </p>
+                <p>
+                    This app was built by team GeckMN using AngularJS, Node.js, Express, PostgresSQL, and AngularJS Material.
                 </p>
             </div>
         </div>
