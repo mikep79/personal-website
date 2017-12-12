@@ -14,23 +14,12 @@
                         <li>
                             <a href="{{ eachRepo.html_url }}" target="_blank" >Github Repository View</a>
                         </li>
-                        <li>
-                            <a href="{{ eachRepo.collaborators_url}}">Collaborators</a>
-                        </li>
-                        <li>
-                            <a href="{{ eachRepo.teams_url }}">Teams</a>
-                        </li>
-                        <li>
-                            <a href="{{ eachRepo.languages_url}}">Languages used</a>
-                        </li>
+                        
                         <li>
                             Created: {{ eachRepo.created_at | date:'shortDate' }}
                         </li>
                         <li>
                             Last Push: {{ eachRepo.pushed_at | date:'shortDate' }}
-                        </li>
-                        <li>
-                            Language: {{ eachRepo.language}}
                         </li>
                     </ul>
                     <hr>
