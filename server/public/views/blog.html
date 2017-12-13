@@ -1,93 +1,128 @@
 <section>
     <div class="pageBody">
-        <p class="p1">
+        <div>
+            <p>
+                <span style="text-decoration: underline;">
+                    <strong>12-13-2017</strong>
+                </span>
+            </p>
+            <p>
+                <strong>Word of the day: Double Precision</strong>
+            </p>
+            <p>"Refers to a type of floating point number (decimal) that has more precision (that is, more digits to the right
+                of the decimal point) than a&nbsp;
+                <em>single-precision</em>&nbsp;number."</p>
+            <p>An interesting difference I'm learning between JavaScript and C# is the need to specify the data type for each
+                variable you create,&nbsp;with detail. For example, in JavaScript we might use the variable "thing"&nbsp;to
+                represent a number or text without having to specify which:</p>
+            <p style="padding-left: 30px;">var thing = 'string of letters';&nbsp;</p>
+            <p style="padding-left: 30px;">var thing = 3.14;</p>
+            <p>In C#&nbsp; we must specify not only whether this is a number or a string, but also the type of number:</p>
+            <p style="padding-left: 30px;">string thing = "string of letters";</p>
+            <p style="padding-left: 30px;">int thing = 3;</p>
+            <p style="padding-left: 30px;">double&nbsp;thing = 3.14;</p>
+            <p>When using numbers, we can use different levels of precision required (by using more digits).&nbsp;Double precision
+                allows us to use more digits for our number, but each number used requires more data.</p>
+            <p>
+                <strong>What I learned today:</strong>
+            </p>
+            <p>I learned about 3 number data types, designated with int, double, and decimal. I got some practice writing out
+                for and while loops and if/else statements, all very much like JavaScript.</p>
+        </div>
+        <div>
+            <p class="p1">
+                <span style="text-decoration: underline;">
+                    <strong>
+                        <span style="font-size: 12pt;">12-11-2017</span>
+                    </strong>
+                </span>
+            </p>
+            <p class="p1">
+                <span style="font-size: 12pt;">
+                    <strong>Word of the day</strong>
+                </span>
+            </p>
+            <p class="p1">
+                <span style="font-size: 12pt;">String interpolation:</span>
+            </p>
+            <p class="p1">
+                <span style="font-size: 12pt;">Process of evaluating a string literal containing placeholders (variables) replaced with values.</span>
+            </p>
+            <p class="p1">
+                <span style="font-size: 12pt;">
+                    <strong>C# example</strong>
+                </span>
+            </p>
+            <p class="p1">
+                <span style="font-size: 12pt;">string breakfastFood = "waffles";</span>
+            </p>
+            <p class="p1">
+                <span style="font-size: 12pt;">Console.WriteLine($"Pancakes are almost as tasty as {breakfastFood}.");</span>
+            </p>
+            <p class="p1">
+                <span style="font-size: 12pt;">$ is used before a string, as a "heads up" to the compiler that the following string contains some logic!
+                    Our variable is then inserted using the { }. When I was learning JavaScript, we pretty much just concatenated
+                    our strings using , or +. The one instance where I used string interpolation I can think of is with AngularJS
+                    expressions in an html file:</span>
+            </p>
+            <p class="p1">
+                <span style="font-size: 12pt;">&lt;p&gt;Here's a {{ vm.word }} example of string interpolation.&lt;/p&gt;</span>
+            </p>
+            <p class="p1">
+                <span style="font-size: 12pt;">I also learned a few methods used in string modification:</span>
+            </p>
+            <p class="p1">
+                <span style="font-size: 12pt;">
+                    <strong>New methods learned today:</strong>
+                </span>
+            </p>
+            <p class="p1">
+                <span style="font-size: 12pt;">string modifications:</span>
+            </p>
+            <p class="p1" style="padding-left: 30px;">
+                <span style="font-size: 12pt;">.Trim() // removes spaces around a string</span>
+            </p>
+            <p class="p1" style="padding-left: 30px;">
+                <span style="font-size: 12pt;">.TrimStart()</span>
+            </p>
+            <p class="p1" style="padding-left: 30px;">
+                <span style="font-size: 12pt;">.TrimEnd()</span>
+            </p>
+            <p class="p1" style="padding-left: 30px;">
+                <span style="font-size: 12pt;">.Replace("original string", "replacement string")</span>
+            </p>
+            <p class="p1" style="padding-left: 30px;">
+                <span style="font-size: 12pt;">// these methods return boolean values</span>
+            </p>
+            <p class="p1" style="padding-left: 30px;">
+                <span style="font-size: 12pt;">.StartsWith()</span>
+            </p>
+            <p class="p1" style="padding-left: 30px;">
+                <span style="font-size: 12pt;">.EndsWith()</span>
+            </p>
+            <p class="p1" style="padding-left: 30px;">
+                <span style="font-size: 12pt;">.Contains()</span>
+            </p>
+            <br>
+        </div>
+        <div>
             <span style="text-decoration: underline;">
-                <strong>
-                    <span style="font-size: 12pt;">12-11-2017</span>
-                </strong>
+                <strong>11-29-2017</strong>
             </span>
-        </p>
-        <p class="p1">
-            <span style="font-size: 12pt;">
-                <strong>Word of the day</strong>
-            </span>
-        </p>
-        <p class="p1">
-            <span style="font-size: 12pt;">String interpolation:</span>
-        </p>
-        <p class="p1">
-            <span style="font-size: 12pt;">Process of evaluating a string literal containing placeholders (variables) replaced with values.</span>
-        </p>
-        <p class="p1">
-            <span style="font-size: 12pt;">
-                <strong>C# example</strong>
-            </span>
-        </p>
-        <p class="p1">
-            <span style="font-size: 12pt;">string breakfastFood = "waffles";</span>
-        </p>
-        <p class="p1">
-            <span style="font-size: 12pt;">Console.WriteLine($"Pancakes are almost as tasty as {breakfastFood}.");</span>
-        </p>
-        <p class="p1">
-            <span style="font-size: 12pt;">$ is used before a string, as a "heads up" to the compiler that the following string contains some logic! Our
-                variable is then inserted using the { }. When I was learning JavaScript, we pretty much just concatenated
-                our strings using , or +. The one instance where I used string interpolation I can think of is with AngularJS
-                expressions in an html file:</span>
-        </p>
-        <p class="p1">
-            <span style="font-size: 12pt;">&lt;p&gt;Here's a {{ vm.word }} example of string interpolation.&lt;/p&gt;</span>
-        </p>
-        <p class="p1">
-            <span style="font-size: 12pt;">I also learned a few methods used in string modification:</span>
-        </p>
-        <p class="p1">
-            <span style="font-size: 12pt;">
-                <strong>New methods learned today:</strong>
-            </span>
-        </p>
-        <p class="p1">
-            <span style="font-size: 12pt;">string modifications:</span>
-        </p>
-        <p class="p1" style="padding-left: 30px;">
-            <span style="font-size: 12pt;">.Trim() // removes spaces around a string</span>
-        </p>
-        <p class="p1" style="padding-left: 30px;">
-            <span style="font-size: 12pt;">.TrimStart()</span>
-        </p>
-        <p class="p1" style="padding-left: 30px;">
-            <span style="font-size: 12pt;">.TrimEnd()</span>
-        </p>
-        <p class="p1" style="padding-left: 30px;">
-            <span style="font-size: 12pt;">.Replace("original string", "replacement string")</span>
-        </p>
-        <p class="p1" style="padding-left: 30px;">
-            <span style="font-size: 12pt;">// these methods return boolean values</span>
-        </p>
-        <p class="p1" style="padding-left: 30px;">
-            <span style="font-size: 12pt;">.StartsWith()</span>
-        </p>
-        <p class="p1" style="padding-left: 30px;">
-            <span style="font-size: 12pt;">.EndsWith()</span>
-        </p>
-        <p class="p1" style="padding-left: 30px;">
-            <span style="font-size: 12pt;">.Contains()</span>
-        </p>
-        <br>
-        <span style="text-decoration: underline;"><strong>11-29-2017</strong></span>
-        </p>
-        <p>
-            What I learned today:
-        </p>
-        <p>
-            C# is syntactically very similar to Java; it's basically Microsoft's answer for it. Class structure is used a lot, and uses
-            this kind of organization:
-        </p>
-        <p>
-            Assembly --> namespace(s) --> class(es.
-        </p>
-        <p>
-            Methods are called just like in JavaScript, each word is capitalized instead of camel case.
-        </p>
+            </p>
+            <p>
+                What I learned today:
+            </p>
+            <p>
+                C# is syntactically very similar to Java; it's basically Microsoft's answer for it. Class structure is used a lot, and uses
+                this kind of organization:
+            </p>
+            <p>
+                Assembly --> namespace(s) --> class(es.
+            </p>
+            <p>
+                Methods are called just like in JavaScript, each word is capitalized instead of camel case.
+            </p>
+        </div>
     </div>
 </section>
