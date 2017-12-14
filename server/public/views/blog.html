@@ -1,6 +1,151 @@
 <section>
     <div class="pageBody">
         <div>
+            <p class="p1">
+                <span style="text-decoration: underline;">
+                    <strong>
+                        <span class="s1" style="color: #000000;">12-14-2017</span>
+                    </strong>
+                </span>
+            </p>
+            <p class="p1">
+                <strong>
+                    <span class="s1" style="color: #000000;">Word of the day: Fibonacci sequence</span>
+                </strong>
+            </p>
+            <p class="p1">
+                <span class="s1" style="color: #000000;">Named after an Italian mathematician, the Fibonacci sequence is a list of numbers starting with 1, where
+                    each number is the sum of the two previous numbers. (for example, 1, 1, 2, 3, 5, 8, etc.) This is a fun
+                    puzzle that's actually pretty simple to solve. Here's a solution that prints out just the 20'th number,
+                    and then prints the first 20 in rows:</span>
+            </p>
+            <p class="p4">
+                <span class="s2">var</span>
+                <span class="s3"> fibNumbs = </span>
+                <span class="s2">new</span>
+                <span class="s4">List</span>
+                <span class="s3">&lt;</span>
+                <span class="s2">int</span>
+                <span class="s3">&gt; {</span>
+                <span class="s5">1</span>
+                <span class="s3">, </span>
+                <span class="s5">1</span>
+                <span class="s3">};</span>
+            </p>
+            <p class="p4">
+                <span class="s7">for</span>
+                <span class="s3"> (</span>
+                <span class="s2">int</span>
+                <span class="s3"> i = </span>
+                <span class="s5">0</span>
+                <span class="s3">; </span>
+                <span class="s8">i</span>
+                <span class="s3"> &lt; </span>
+                <span class="s5">18</span>
+                <span class="s3">; </span>
+                <span class="s8">i</span>
+                <span class="s3">++) {</span>
+            </p>
+            <p class="p4" style="padding-left: 30px;">
+                <span class="s2">var</span>
+                <span class="s3"> currentIndex = </span>
+                <span class="s8">fibNumbs</span>
+                <span class="s3">.</span>
+                <span class="s8">Count</span>
+                <span class="s3"> - </span>
+                <span class="s5">1</span>
+                <span class="s3">;</span>
+            </p>
+            <p class="p4" style="padding-left: 30px;">
+                <span class="s2">var</span>
+                <span class="s3"> previousIndex = </span>
+                <span class="s8">fibNumbs</span>
+                <span class="s3">.</span>
+                <span class="s8">Count</span>
+                <span class="s3"> - </span>
+                <span class="s5">2</span>
+                <span class="s3">;</span>
+            </p>
+            <p class="p6" style="padding-left: 30px;">
+                <span class="s3">fibNumbs</span>
+                <span class="s9">.</span>
+                <span class="s10">Add</span>
+                <span class="s9">(</span>
+                <span class="s3">fibNumbs</span>
+                <span class="s9">[</span>
+                <span class="s3">currentIndex</span>
+                <span class="s9">] + </span>
+                <span class="s3">fibNumbs</span>
+                <span class="s9">[</span>
+                <span class="s3">previousIndex</span>
+                <span class="s9">]);</span>
+            </p>
+            <p class="p4">
+                <span class="s3">}</span>
+            </p>
+            <p class="p7">
+                <span class="s6">Console</span>
+                <span class="s11">.</span>
+                <span class="s12">WriteLine</span>
+                <span class="s11">(</span>
+                <span class="s13">$"The {</span>
+                <span class="s6">fibNumbs</span>
+                <span class="s13">.</span>
+                <span class="s6">Count</span>
+                <span class="s13">}'th fib numb is: {</span>
+                <span class="s6">fibNumbs</span>
+                <span class="s13">[</span>
+                <span class="s6">fibNumbs</span>
+                <span class="s13">.</span>
+                <span class="s6">Count</span>
+                <span class="s11">-</span>
+                <span class="s14">1</span>
+                <span class="s13">]}."</span>
+                <span class="s11">);</span>
+            </p>
+            <p class="p4">// print first 20 numbers:</p>
+            <p class="p4">
+                <span class="s7">foreach</span>
+                <span class="s3"> (</span>
+                <span class="s2">var</span>
+                <span class="s3"> numb </span>
+                <span class="s7">in</span>
+                <span class="s8">fibNumbs</span>
+                <span class="s3">){</span>
+            </p>
+            <p class="p6" style="padding-left: 30px;">
+                <span class="s3">Console</span>
+                <span class="s9">.</span>
+                <span class="s10">WriteLine</span>
+                <span class="s9">(</span>
+                <span class="s3">numb</span>
+                <span class="s9">);</span>
+            </p>
+            <p class="p4">
+                <span class="s3">}</span>
+            </p>
+            <p class="p1">
+                <strong>
+                    <span class="s1" style="color: #000000;">What I learned today:</span>
+                </strong>
+            </p>
+            <p class="p3">
+                <span style="color: #000000;">New methods that work on arrays:</span>
+            </p>
+            <p class="p3" style="padding-left: 30px;">
+                <span style="color: #000000;">.IndexOf("name of value in array")
+                    <span class="Apple-converted-space">&nbsp; </span>=&gt; returns the index of that value</span>
+            </p>
+            <p class="p3" style="padding-left: 30px;">
+                <span style="color: #000000;">.Sort()
+                    <span class="Apple-converted-space">&nbsp; </span>=&gt; Sorts array (in strings, alphabetically). Modifies original array.</span>
+            </p>
+            <p class="p3" style="padding-left: 30px;">
+                <span style="color: #000000;">.Add(value)
+                    <span class="Apple-converted-space">&nbsp; </span>=&gt; adds a value to the end of list</span>
+            </p>
+        </div>
+        <div>
             <p>
                 <span style="text-decoration: underline;">
                     <strong>12-13-2017</strong>
