@@ -20,6 +20,9 @@ myApp.config(function($routeProvider, $locationProvider) {
     .when('/blog', {
       templateUrl: '/views/blog.html'
     })
+    .when('/about', {
+      templateUrl: '/views/about.html'
+    })
     .otherwise({
       redirectTo: '/'
     });
