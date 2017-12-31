@@ -1,8 +1,9 @@
 body {
     /* background-color: rgb(211, 239, 255); */
-    margin: 20px;
     min-width: 650px;
     max-width: 900px;
+    margin: auto;
+    margin-top: 20px;
 }
 
 .pageBody {
