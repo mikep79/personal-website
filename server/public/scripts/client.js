@@ -32,6 +32,15 @@ myApp.config(function ($routeProvider, $locationProvider) {
     .when('/projects/market-mania', {
       templateUrl: 'views/projects/market-mania.html'
     })
+    .when('/projects/photo-gallery', {
+      templateUrl: 'views/projects/photo-gallery.html'
+    })
+    .when('/projects/to-do', {
+      templateUrl: 'views/projects/to-do.html'
+    })
+    .when('/projects/people-list-creator', {
+      templateUrl: 'views/projects/people-list-creator.html'
+    })
     .otherwise({
       redirectTo: '/'
     });

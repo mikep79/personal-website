@@ -73,6 +73,11 @@ a {
 /* END HOME/INFO */
 
 /* PROJECTS */
+
+.projectThumbDiv {
+    padding: 20px;
+}
+
 .appPic {
     margin: 40px 0px 40px 0px
 }
