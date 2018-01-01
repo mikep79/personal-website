@@ -21,6 +21,10 @@ p, li {
     font-family: 'Manuale', serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* HEADING */
 #nav_title {
     text-align: left; 

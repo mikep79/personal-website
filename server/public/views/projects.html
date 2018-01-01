@@ -1,4 +1,48 @@
 <section>
+    <div layout="row" layout-align="space-around center">
+        <div style="padding: 20px">
+            <a href="#/projects/jump">
+                <div layout="column" layout-align="center center">
+                    <div>
+                        <img ng-src="images/demos/jump_demo_ipad.gif" width="300px" />
+                    </div>
+                    <div>JUMP</div>
+                </div>
+            </a>
+        </div>
+        <div style="padding: 20px">
+            <a href="#/projects/grow-north">
+                <div layout="column" layout-align="center center">
+                    <div>
+                        <img ng-src="images/demos/grow_north_demo_mac.gif" width="300px" />
+                    </div>
+                    <div>Grow North app</div>
+                </div>
+            </a>
+        </div>
+        <div style="padding: 20px">
+            <a href="#/projects/market-mania">
+                <div layout="column" layout-align="center center">
+                    <div>
+                        <img ng-src="images/demos/marketplace_pic_macbook.png" width="300px" />
+                    </div>
+                    <div>Market Mania</div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <a href="#/projects/jump">
+        <img ng-src="images/demos/jump_demo_ipad.gif" width="300px" />
+    </a>
+    <a href="#/projects/grow-north">
+        <img ng-src="images/demos/grow_north_demo_mac.gif" width="300px" />
+    </a>
+    <a href="#/projects/market-mania">
+        <img ng-src="images/demos/marketplace_pic_macbook.png" width="300px" />
+    </a>
+</section>
+
+<section>
     <div class="container slider">
         <img ng-repeat="eachSlide in PC.slides" class="slide" width="500" ng-src="{{ eachSlide.image }}" ng-hide="!isCurrentSlideIndex($index)">
     </div>
@@ -150,7 +194,9 @@
                     <a href="https://github.com/mikep79/to-do-app">Github repo</a>
                 </p>
                 <p>
-                    This app allows the user to create tasks they need to get done, which they can then "complete" or delete. The purpose of this app was to provide a basic template that includes the basic CRUD (Create-Read-Update-Delete) functions, both for jQuery and AngularJS.
+                    This app allows the user to create tasks they need to get done, which they can then "complete" or delete. The purpose of
+                    this app was to provide a basic template that includes the basic CRUD (Create-Read-Update-Delete) functions,
+                    both for jQuery and AngularJS.
                 </p>
                 <p>
                     This app was built with JavaScript, jQuery, AngularJS, PostgreSQL, Node.js, and Express.
@@ -172,7 +218,8 @@
                     <a href="https://github.com/mikep79/people-list-creator">Github repo</a>
                 </p>
                 <p>
-                    An early jQuery project of mine, this app allows the user to add a person and a corresponding trait to a list. The user can cycle through the people list with a carousel, and delete a person as well.
+                    An early jQuery project of mine, this app allows the user to add a person and a corresponding trait to a list. The user can
+                    cycle through the people list with a carousel, and delete a person as well.
                 </p>
                 <p>
                     This app was built with JavaScript, jQuery, and Node.js.
