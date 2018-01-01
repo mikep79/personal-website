@@ -79,5 +79,9 @@ a {
 }
 
 .appPic {
-    margin: 40px 0px 40px 0px
+    /* margin: 40px 0px 40px 0px */
+}
+
+.appTitle {
+    text-align: center;
 }
