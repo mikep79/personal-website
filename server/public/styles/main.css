@@ -37,7 +37,9 @@ a:hover {
 
 #title_name {
     text-decoration: none;
-    color: rgb(187, 212, 216);
+    /* blue: */
+    /* color: rgb(187, 212, 216); */
+    color: rgb(206, 148, 115);
     font-size: 40px;
     letter-spacing: 2px;
     font-weight: bolder;
