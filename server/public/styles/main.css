@@ -26,6 +26,10 @@ a {
     color: rgb(206, 148, 115);
 }
 
+a:hover {
+    color: rgb(114, 81, 62);
+}
+
 /* HEADING */
 #nav_title {
     text-align: left; 
@@ -89,4 +93,15 @@ a {
     text-align: center;
     padding: 0px;
     margin: 0px;
+}
+
+.projectThumbPicDiv { 
+    height: 300px;
+    width: 300px;
+    transition: all 0.3s ease 0s;
+}
+
+.projectThumbPicDiv:hover {
+    background-color: rgba(255, 185, 145, 0.31);
+    transition: all 0.3s ease 0s;
 }
