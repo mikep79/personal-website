@@ -1,183 +1,68 @@
-<section>
-    <div class="container slider">
-        <img ng-repeat="eachSlide in PC.slides" class="slide" width="500" ng-src="{{ eachSlide.image }}" ng-hide="!isCurrentSlideIndex($index)">
-    </div>
-    <div layout="column" layout-align="start start">
-        <div class="pageBody" layout="row" layout-xs="column" layout-align="space-between start">
-            <div flex=70>
-                <div class="appPic">
-                    <a href="https://solo-project-mp.herokuapp.com">
-                        <img ng-src="images/demos/jump_demo_ipad.gif" height="600px" />
-                    </a>
+<row>
+    <div layout="row" layout-align="space-around center">
+        <div class="projectThumbDiv">
+            <a href="#/projects/jump">
+                <div layout="column" layout-align="center center">
+                    <div class="projectThumbPicDiv" layout="row" layout-align="center center">
+                        <img  ng-src="images/demos/jump_demo_ipad.gif" width="300px" />
+                    </div>
+                    <div>JUMP</div>
                 </div>
-                <!-- <img ng-src="{{ PC.jumpPicsCurrent.image }}" height="350px"/>
-            <p>test: {{ PC.obj.i }}</p> -->
-                <!-- <div class="appPic">
-                    <img src="images/jump/create_event.png" width="500px" />
-                </div>
-                <div class="appPic">
-                    <img src="images/jump/filter_events.png" width="500px" />
-                </div>
-                <div class="appPic">
-                    <img src="images/jump/find_events.png" width="500px" />
-                </div> -->
-            </div>
-            <div flex=30>
-                <p>
-                    <strong>
-                        JUMP - Join Up Meet People
-                    </strong>
-                </p>
-                <p>
-                    <strong>Full-stack JavaScript-based app designed to facilitate event planning and sharing by caregivers for people
-                        with special needs. </strong>
-                </p>
-                <p>
-                    <a href="https://solo-project-mp.herokuapp.com">Demo version of app</a>
-                </p>
-                <p>
-                    <a href="https://github.com/mikep79/solo-project">Github repo</a>
-                </p>
-                <p>The app allows a user to register and sign in, create events tagged with accessibility and content needs,
-                    and share with other users of the app. Users can register for an event and manage attendance in the My
-                    Events page. Users who do not create an account will still be able to view the events, and will be able
-                    to filter available events by content type and/or accessibility needs. As an example, a user with deafness
-                    may click on tags for deafness and movies to find events such as movie showings at theatres with closed
-                    captioning or an interpreter.
-                </p>
-                <p>
-                    This app was built with the MEAN stack: Mongo Database, Express, Angular.js, Node.js.
-                </p>
-            </div>
+            </a>
         </div>
-        <div class="pageBody" layout="row" layout-xs="column" layout-align="space-between start">
-            <div flex=70>
-                <div class="appPic">
-                    <a href="http://grownorthdemo.herokuapp.com/">
-                        <img ng-src="images/demos/grow_north_demo_mac.gif" height="600px" />
-                    </a>
+        <div class="projectThumbDiv">
+            <a href="#/projects/grow-north">
+                <div layout="column" layout-align="center center">
+                    <div class="projectThumbPicDiv" layout="row" layout-align="center center">
+                        <img  ng-src="images/demos/grow_north_demo_mac.gif" width="300px" />
+                    </div>
+                    <div>Grow North app</div>
                 </div>
-            </div>
-            <div flex=30>
-                <p>
-                    <strong>
-                        Grow North app
-                    </strong>
-                </p>
-                <p>
-                    <strong>Full stack web application built for Grow North MN. This app facilitates connection building between
-                        food and agriculture businesses. </strong>
-                </p>
-                <p>
-                    <a href="http://grownorthdemo.herokuapp.com/">Demo version of app</a>
-                </p>
-                <p>
-                    <a href="https://github.com/mikep79/Grow-North-MN">Github repo</a>
-                </p>
-                <p>Admin and guest are the users. Guests can access the survey form to enter their information about their business,
-                    which adds this data to a database that can be acccessed by the admin side. The admin can create an account,
-                    change password, and log in. Once logged in, admin can view the directory of all persons in the database,
-                    read their information, update any line, and delete the person's profile. Admin can also create connections
-                    between profiles and add comments about profile or connection.
-                </p>
-                <p>
-                    This app was built by team GeckMN using AngularJS, Node.js, Express, PostgresSQL, and AngularJS Material.
-                </p>
-            </div>
+            </a>
         </div>
-        <div class="pageBody" layout="row" layout-xs="column" layout-align="space-between start">
-            <div flex=70>
-                <div class="appPic">
-                    <img ng-src="images/demos/marketplace_pic_macbook.png" height="600px" />
+        <div class="projectThumbDiv">
+            <a href="#/projects/market-mania">
+                <div layout="column" layout-align="center center">
+                    <div class="projectThumbPicDiv" layout="row" layout-align="center center">
+                        <img  ng-src="images/demos/marketplace_pic_macbook.png" width="300px" />
+                    </div>
+                    <div>Market Mania</div>
                 </div>
-            </div>
-            <div flex=30>
-                <p>
-                    <strong>Market Mania</strong>
-                </p>
-                <p>
-                    <a href="https://github.com/mikep79/marketplace-public">Github repo</a>
-                </p>
-                <p>
-                    Market Mania is a game app that allows a player to register and login, and purchase different items from a pantry. The player
-                    starts with $100, and prices for market items randomly change frequently. The object is to buy items
-                    when prices are low, and sell when prices are high to have the highest amount of money. The game tracks
-                    the highest "score" (amount of money) for users and displays the current best player.
-                </p>
-                <p>
-                    This app was built with JavaScript, AngularJS, Node.js, Express, and MongoDB, and custom CSS styling.
-                </p>
-            </div>
-        </div>
-        <div class="pageBody" layout="row" layout-xs="column" layout-align="space-between start">
-            <div flex=70>
-                <!-- add left margin -->
-                <div class="appPic" style="margin-left: 20px;">
-                    <img ng-src="images/demos/ng-photo-gallery-demo.gif" height="430px" />
-                </div>
-            </div>
-            <div flex=30>
-                <p>
-                    <strong>Photo Gallery</strong>
-                </p>
-                <p>
-                    <a href="https://ng-photo-gallery.herokuapp.com">Demo version of app</a>
-                </p>
-                <p>
-                    <a href="https://github.com/mikep79/ng_photo_gallery">Github repo</a>
-                </p>
-                <p>
-                    This app contains a gallery of photos that users can view. Users can click on a photo to view a description, "like" a photo,
-                    post a comment, or view all comments.
-                </p>
-                <p>
-                    This app was built with JavaScript, AngularJS, Node.js and custom CSS styling.
-                </p>
-            </div>
-        </div>
-        <div class="pageBody" layout="row" layout-xs="column" layout-align="space-between start">
-            <div flex=70>
-                <!-- add left margin -->
-                <div class="appPic" style="margin-left: 20px;">
-                    <img ng-src="images/demos/to-do-app-demo.gif" height="360px" />
-                </div>
-            </div>
-            <div flex=30>
-                <p>
-                    <strong>To Do app</strong>
-                </p>
-                <p>
-                    <a href="https://github.com/mikep79/to-do-app">Github repo</a>
-                </p>
-                <p>
-                    This app allows the user to create tasks they need to get done, which they can then "complete" or delete. The purpose of this app was to provide a basic template that includes the basic CRUD (Create-Read-Update-Delete) functions, both for jQuery and AngularJS.
-                </p>
-                <p>
-                    This app was built with JavaScript, jQuery, AngularJS, PostgreSQL, Node.js, and Express.
-                </p>
-            </div>
-        </div>
-        <div class="pageBody" layout="row" layout-xs="column" layout-align="space-between start">
-            <div flex=70>
-                <!-- add left margin -->
-                <div class="appPic" style="margin-left: 20px;">
-                    <img ng-src="images/demos/people-list-creator-demo.gif" height="360px" />
-                </div>
-            </div>
-            <div flex=30>
-                <p>
-                    <strong>People List Creator</strong>
-                </p>
-                <p>
-                    <a href="https://github.com/mikep79/people-list-creator">Github repo</a>
-                </p>
-                <p>
-                    An early jQuery project of mine, this app allows the user to add a person and a corresponding trait to a list. The user can cycle through the people list with a carousel, and delete a person as well.
-                </p>
-                <p>
-                    This app was built with JavaScript, jQuery, and Node.js.
-                </p>
-            </div>
+            </a>
         </div>
     </div>
-</section>
+</row>
+<row>
+    <div layout="row" layout-align="space-around center">
+        <div class="projectThumbDiv">
+            <a href="#/projects/photo-gallery">
+                <div layout="column" layout-align="center center">
+                    <div class="projectThumbPicDiv" layout="row" layout-align="center center">
+                        <img  ng-src="images/demos/ng-photo-gallery-demo.gif" width="250px" />
+                    </div>
+                    <div>Photo Gallery</div>
+                </div>
+            </a>
+        </div>
+        <div class="projectThumbDiv">
+            <a href="#/projects/to-do">
+                <div layout="column" layout-align="center center">
+                    <div class="projectThumbPicDiv" layout="row" layout-align="center center">
+                        <img  ng-src="images/demos/to-do-app-demo.gif" width="250px" />
+                    </div>
+                    <div>To Do app</div>
+                </div>
+            </a>
+        </div>
+        <div class="projectThumbDiv">
+            <a href="#/projects/people-list-creator">
+                <div layout="column" layout-align="center center">
+                    <div class="projectThumbPicDiv" layout="row" layout-align="center center">
+                        <img  ng-src="images/demos/people-list-creator-demo.gif" width="250px" />
+                    </div>
+                    <div>People List Creator</div>
+                </div>
+            </a>
+        </div>
+    </div>
+</row>
