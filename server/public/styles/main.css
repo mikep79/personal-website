@@ -23,6 +23,7 @@ p, li {
 
 a {
     text-decoration: none;
+    color: rgb(206, 148, 115);
 }
 
 /* HEADING */
@@ -80,6 +81,8 @@ a {
 
 .appPic {
     /* margin: 40px 0px 40px 0px */
+    padding-top: 0px;
+    margin-top: 0px;
 }
 
 .appTitle {
