@@ -1,6 +1,16 @@
 <section>
     <div class="pageBody">
         <div>
+                <p><span style="text-decoration: underline;"><strong>Jan 12, 2018</strong></span></p>
+                <p><strong>Word of the day</strong>: overflow</p>
+                <p>For those of you who live in an apartment, how do you remember to check your clothes? If you're like me, you toss them in, then set the kitchen timer for 59 minutes to remind yourself to go get them out of the drier before some impatient neighbor throws your clothes on the floor. But usually I accidentally click the little minute button one click too far, and what happens? Right back to 00:00! </p>
+                <p>This illustrates a concept called overflow. With the different data types we have in C#, it's possible to convert a number from one data type to another. For example, int to byte:</p>
+                <p style="padding-left: 30px;"><span style="color: #3366ff;">byte</span> myNumber = 15;<br /><span style="color: #3366ff;">int</span> yourNumber = myNumber;</p>
+                <p>This is fine, since int numbers can store larger numbers than byte numbers. But what happens if we try the opposite, taking an int number that is larger than a byte number can handle? We get an overflow!</p>
+                <p style="padding-left: 30px;"><span style="color: #3366ff;">int</span> newNumber = 260;<br /><span style="color: #3366ff;">byte</span> anotherNumber = (byte)newNumber;</p>
+                <p>Our anotherNumber is now equal to 4, and not the expected 260. A byte number can only store numbers from 0 to 255. So when we try to convert a number larger than that to a byte, it starts over at 0 when we reach 256, just like our annoying kitchen timer. Hence, 260 will be stored as 4.</p>
+        </div>
+        <div>
                 <p class="p1"><span style="text-decoration: underline;"><strong>January 8, 2018</strong></span></p>
                 <p class="p1"><strong>Word of the day:</strong> Just-In-Time compiler (JIT)</p>
                 <p class="p1">Are you an international traveler? Imagine for a moment what it would be like to have a portable translator; someone who understand the various languages of people you'd like to interact with, and could translate your speech into their native tongue.</p>
