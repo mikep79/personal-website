@@ -1,6 +1,16 @@
 <section>
     <div class="pageBody">
         <div>
+                <p><span style="text-decoration: underline;"><strong>Jan 16, 2018 -</strong></span></p>
+                <p>The Garbage Collector is an interesting and time-saving feature of C#. To see the benefit though, let's first look at what differences exist between C# and JavaScript.</p>
+                <p>In JavaScript, if we wanted to create an array, the syntax is simple and flexible:</p>
+                <p style="padding-left: 30px;">var emptyArray = [];</p>
+                <p>We can then push whatever data we like into emptyArray: strings, numbers, booleans, other arrays, you name it! We can also subtract and add additional items to the array.</p>
+                <p>With C#, this isn't possible; we must tell the .NET framework to allocate memory for the array when we declare it, by stating what type of data we are storing and how many indices the array will store. (We also can't change these characteristics after declaring the array.) We use this syntax:</p>
+                <p style="padding-left: 30px;">var numbersArray = new int[3];</p>
+                <p>This declares that our numbersArray will have 3 values, all of integer type. Using the "new" keyword tells .NET framework to allocate the memory needed for the array object, and that's all we have to do, because the Garbage Collector will delete any unused objects! This wouldn't be the case in C++ or Objective C.</p>
+        </div>
+        <div>
                 <p><span style="text-decoration: underline;"><strong>Jan 12, 2018</strong></span></p>
                 <p><strong>Word of the day</strong>: overflow</p>
                 <p>For those of you who live in an apartment, how do you remember to check your clothes? If you're like me, you toss them in, then set the kitchen timer for 59 minutes to remind yourself to go get them out of the drier before some impatient neighbor throws your clothes on the floor. But usually I accidentally click the little minute button one click too far, and what happens? Right back to 00:00! </p>
